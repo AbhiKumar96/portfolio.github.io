@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- this link is for svg icons which i have taken from FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- this header part is for navigation -->
+    <header>
+       
+        <div class="logo"  >    <!--  for top left image as logo --> 
+            <img src="./logo.jpg" alt="">
+        </div>
+        
+        <!-- this label tag is for chaeck box which will help me to open or close left nav for mobile screen -->
+        <label for="openNav">
+            <!-- these span tags i have used for ham burger menu  -->
+             <!-- PLEASE MUST SEE THAT HAM BURGER TRANSITION INTO CROSS SIGN -->
+            <span></span>
+            <span></span>               
+            <span></span>
+        </label>
+        <!-- input tag with type chackbox used for whether this input has checked or not checked -->
+        <input type="checkbox" name="openNav" id="openNav">
+
+         <ul>    <!-- this list is for navigation between different section -->
+          <li><a href="#home"><i class="fa-solid fa-house-user"></i> About</a></li>
+          <li><a href="#experience"><i class="fa-solid fa-brain"></i> Experience</a></li>
+          <li><a href="#skill"><i class="fa-solid fa-lightbulb"></i> Skills</a></li>
+          <li><a href="#project"><i class="fa-solid fa-list-check"></i> Projects</a></li>
+          <li><a href="#contact"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="container">   <!-- this will contain main information -->
+        <div class="main">
+           <div class="content">
+              <p class="greet" id="home"><b>WELCOME</b> TO MY PROFILE  </p>
+               <h1>
+                      <!-- here i have used a svg file as my name on screen for  BORDER ANIMATION -->
+                      Hi, I'm <span><svg id="my-svg"
+                    width="325" height="60" viewBox="5 0.3 38 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.24 9.024C5.544 9.024 5.168 8.912 5.112 8.688L4.716 7.14H2.808L2.46 8.628C2.412 8.876 2.028 9 1.308 9C0.924 9 0.64 8.98 0.456 8.94C0.272 8.892 0.18 8.856 0.18 8.832L2.304 0.707999C2.304 0.643999 2.852 0.611999 3.948 0.611999C5.044 0.611999 5.592 0.643999 5.592 0.707999L7.668 8.844C7.668 8.9 7.484 8.944 7.116 8.976C6.748 9.008 6.456 9.024 6.24 9.024ZM3.108 5.616H4.368L3.828 3.132H3.756L3.108 5.616ZM8.46328 0.636C8.46328 0.539999 8.80728 0.491999 9.49528 0.491999C10.1913 0.491999 10.5393 0.543999 10.5393 0.648V2.976C10.8833 2.912 11.1273 2.88 11.2713 2.88C12.9513 2.88 13.7913 3.844 13.7913 5.772C13.7913 6.844 13.5313 7.672 13.0113 8.256C12.4993 8.832 11.7673 9.12 10.8153 9.12C9.87128 9.12 9.08728 8.908 8.46328 8.484V0.636ZM10.9353 4.752C10.7993 4.752 10.6673 4.796 10.5393 4.884V7.176C10.6513 7.224 10.7673 7.248 10.8873 7.248C11.0153 7.248 11.1433 7.2 11.2713 7.104C11.4953 6.944 11.6073 6.572 11.6073 5.988C11.6073 5.164 11.3833 4.752 10.9353 4.752ZM16.6417 8.916C16.6417 8.988 16.3057 9.024 15.6337 9.024C14.9697 9.024 14.6377 8.968 14.6377 8.856V0.636C14.6377 0.579999 14.7617 0.539999 15.0097 0.516C15.2577 0.492 15.4657 0.48 15.6337 0.48C16.3057 0.48 16.6417 0.552 16.6417 0.696V3.096C17.0897 2.96 17.4297 2.892 17.6617 2.892C18.2697 2.892 18.7497 3.056 19.1017 3.384C19.4537 3.704 19.6297 4.304 19.6297 5.184V8.904C19.6297 8.976 19.3177 9.012 18.6937 9.012C17.9897 8.988 17.6377 8.948 17.6377 8.892V5.364C17.6377 4.972 17.5097 4.776 17.2537 4.776C17.0777 4.776 16.8737 4.86 16.6417 5.028V8.916ZM22.8454 8.928C22.8454 8.992 22.4774 9.024 21.7414 9.024C21.0134 9.024 20.6494 8.996 20.6494 8.94V3.048C20.6494 2.992 21.0134 2.964 21.7414 2.964C22.4774 2.964 22.8454 2.988 22.8454 3.036V8.928ZM22.8454 2.328C22.8454 2.384 22.4774 2.412 21.7414 2.412C21.0134 2.412 20.6494 2.388 20.6494 2.34V0.611999C20.6494 0.531999 21.0134 0.491999 21.7414 0.491999C22.4774 0.491999 22.8454 0.516 22.8454 0.564V2.328ZM24.1826 6.84C24.8306 7.232 25.3426 7.428 25.7186 7.428C25.9586 7.428 26.0786 7.344 26.0786 7.176C26.0786 7.056 25.8706 6.9 25.4546 6.708C24.4546 6.3 23.9546 5.632 23.9546 4.704C23.9546 4.112 24.1706 3.66 24.6026 3.348C25.0346 3.036 25.5506 2.88 26.1506 2.88C26.7586 2.88 27.2706 2.944 27.6866 3.072C28.1106 3.2 28.3226 3.368 28.3226 3.576C28.3226 3.752 28.2346 3.984 28.0586 4.272C27.8906 4.56 27.7746 4.716 27.7106 4.74C27.3666 4.548 26.9946 4.452 26.5946 4.452C26.3786 4.452 26.2706 4.528 26.2706 4.68C26.2706 4.776 26.3106 4.86 26.3906 4.932C26.4786 4.996 26.6346 5.08 26.8586 5.184C27.0826 5.28 27.2666 5.368 27.4106 5.448C27.5626 5.528 27.7306 5.64 27.9146 5.784C28.2986 6.088 28.4906 6.484 28.4906 6.972C28.4906 7.612 28.2786 8.132 27.8546 8.532C27.4306 8.924 26.7906 9.12 25.9346 9.12C25.3666 9.12 24.8506 9.024 24.3866 8.832C23.9226 8.64 23.6906 8.376 23.6906 8.04C23.6906 7.816 23.7426 7.58 23.8466 7.332C23.9586 7.084 24.0706 6.92 24.1826 6.84ZM31.337 8.916C31.337 8.988 31.001 9.024 30.329 9.024C29.665 9.024 29.333 8.968 29.333 8.856V0.636C29.333 0.579999 29.457 0.539999 29.705 0.516C29.953 0.492 30.161 0.48 30.329 0.48C31.001 0.48 31.337 0.552 31.337 0.696V3.096C31.785 2.96 32.125 2.892 32.357 2.892C32.965 2.892 33.445 3.056 33.797 3.384C34.149 3.704 34.325 4.304 34.325 5.184V8.904C34.325 8.976 34.013 9.012 33.389 9.012C32.685 8.988 32.333 8.948 32.333 8.892V5.364C32.333 4.972 32.205 4.776 31.949 4.776C31.773 4.776 31.569 4.86 31.337 5.028V8.916ZM39.8807 8.676C39.3767 8.972 38.7287 9.12 37.9367 9.12C37.1447 9.12 36.4767 8.852 35.9327 8.316C35.3887 7.772 35.1167 7.024 35.1167 6.072C35.1167 5.112 35.3767 4.34 35.8967 3.756C36.4247 3.172 37.0887 2.88 37.8887 2.88C38.6887 2.88 39.3047 3.084 39.7367 3.492C40.1767 3.9 40.3967 4.396 40.3967 4.98C40.3967 6.276 39.6527 6.924 38.1647 6.924H37.3367C37.3367 7.164 37.4007 7.332 37.5287 7.428C37.6647 7.516 37.8607 7.56 38.1167 7.56C38.6767 7.56 39.2087 7.432 39.7127 7.176C39.7207 7.168 39.7567 7.224 39.8207 7.344C40.0127 7.688 40.1087 7.98 40.1087 8.22C40.1087 8.452 40.0327 8.604 39.8807 8.676ZM38.3807 5.208C38.3807 4.872 38.2167 4.704 37.8887 4.704C37.7367 4.704 37.6047 4.752 37.4927 4.848C37.3887 4.936 37.3367 5.068 37.3367 5.244V5.616H37.9847C38.2487 5.616 38.3807 5.48 38.3807 5.208ZM41.1806 0.696C41.1806 0.568 41.5446 0.504 42.2726 0.504C42.9526 0.528 43.2926 0.579999 43.2926 0.659999V5.268L44.4806 3.072C44.5366 2.952 44.8766 2.892 45.5006 2.892C46.1246 2.892 46.5246 2.932 46.7006 3.012L45.1406 5.556L46.9406 8.928C46.9566 8.96 46.8046 8.984 46.4846 9C46.1726 9.024 45.9126 9.036 45.7046 9.036C44.9366 9.036 44.5246 9 44.4686 8.928L43.2806 6.264V8.916C43.2806 9.02 42.9286 9.072 42.2246 9.072C41.5286 9.072 41.1806 9.024 41.1806 8.928V0.696Z" fill="white"/>
+                    </svg></span> <br>
+                    and a 
+                   <div class="textgradient">   
+                        <!-- i have taken three title name as attribute for animation of text exchange one by one   -->
+                   <div class="job"  data-job1="{Frontend}!"  
+                   data-job2="{Backend}!">
+   
+                    </div>
+                   </div>
+               </h1>
+            
+                 <p>Hi there! I'm <b>ABHISHEK</b> ,a passionate and dedicated <b>Web Developer</b> with a deep love for problem-solving and creating innovative solutions. With a strong foundation in Frontend and Backend, I specialize in building  intuitive websites, scalable applications, data-driven solutions.
+
+                 </p>
+               <div class="contact">
+                 <h3> CONNECT WITH ME</h3>
+                 <ul>     <!--this list is for social media links  -->
+                   <li>
+                       <i class="fa-brands fa-facebook-f"></i>
+                    </li>
+                    <li>
+                       <i class="fa-brands fa-instagram"></i>
+                    </li>
+                    <li>
+                       <i class="fa-brands fa-x-twitter"></i>
+                    </li>
+                     <li> <i class="fa-brands fa-linkedin-in"></i></li>
+                 </ul>
+               </div>
+            </div>
+            <div class="photo">     <!--this is for main AVATAR  -->
+                 <img src="./avatar.png" alt="">
+            </div>
+        </div>
+
+       <div id="experience">
+        <div class="title">EXPERIENCE</div>
+
+           <div class="experience_list">
+                <div class="item">
+                    <div class="name"><i class="fa-solid fa-chevron-left"></i> Frontend <i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="span">
+                      <ul>
+                        <li><i class="fa-brands fa-microsoft"></i> Microsoft - <span> 1 year</span></li>
+                        <li><i class="fa-brands fa-apple"></i>
+                            Apple - <span>8 months</span></li>
+                        <li><i class="fa-brands fa-google"></i> Google - <span> 9 months</span></li>
+                        <li><i class="fa-brands fa-facebook"></i>
+                            Facebook - <span>2 year</span></li>
+                     </ul>  
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="name"><i class="fa-solid fa-chevron-left"></i> Backend <i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="span">
+                        <ul>
+                          <li><i class="fa-brands fa-microsoft"></i> Microsoft - <span> 1 year</span></li>
+                          <li><i class="fa-brands fa-apple"></i>
+                              Apple - <span>8 months</span></li>
+                          <li><i class="fa-brands fa-google"></i> Google - <span> 9 months</span></li>
+                          <li><i class="fa-brands fa-facebook"></i>
+                              Facebook - <span>2 year</span></li>
+                       </ul>  
+                      </div>
+                </div>
+           </div>
+
+
+       </div>
+
+
+
+    
+     <div  id="skill">   <!-- skill section -->
+        <div class="title">SKILLS</div>
+          <div class="skill_List">
+               <div class="item">   
+                <div class="name"><i class="fa-brands fa-html5"></i> HTML</div>
+                <div class="valuate" style="--points:90%"></div>    <!--this --point variable will help me to make transition as how much i know  out of 100% , As i have used ::before property-->  
+               </div>
+
+               <div class="item">
+                <div class="name"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+                <div class="valuate" style="--points:80%"></div>
+               </div>
+
+               <div class="item">
+                <div class="name"><i class="fa-brands fa-js"></i> JavaScript</div>
+                <div class="valuate" style="--points:60%"></div>
+               </div>
+
+               <div class="item">
+                <div class="name"><i class="fa-brands fa-java"></i> Java</div>
+                <div class="valuate" style="--points:70%"></div>
+               </div>
+
+               <div class="item">
+                <div class="name"><i class="fa-brands fa-vuejs"></i> Vue.JS</div>
+                <div class="valuate" style="--points:40%"></div>
+               </div>
+
+               <div class="item">
+                <div class="name"><i class="fa-brands fa-angular"></i> Angular.JS</div>
+                <div class="valuate" style="--points:45%"></div>
+               </div>
+
+               <div class="item">
+                <div class="name"><i class="fa-brands fa-react"></i> ReactJS</div>
+                <div class="valuate" style="--points:65%"></div>
+               </div>
+
+               <div class="item">
+                <div class="name"><i class="fa-brands fa-php"></i> Php</div>
+                <div class="valuate" style="--points:95%"></div>
+               </div>
+          </div>
+    </div>
+
+    <!-- Project corner -->
+     <div id="project">
+        <div class="title">PROJECTS</div>
+          <div class="projectlist">
+            <!-- prejct 1 -->
+            <div class="item">
+                <img src="./img1.jpg" alt="">
+                <div class="name">
+                    Netflix Clone
+                </div>
+                
+               
+            </div>
+             <!-- prejct 2 -->
+            <div class="item">
+                <img src="./img2.jpg" alt="">
+                <div class="name">
+                    Data Collector
+                </div>
+                
+              
+            </div>
+              <!-- prejct 3 -->
+            <div class="item">
+                <img src="./img3.jpg" alt="">
+                <div class="name">
+                    URL Shortner
+                </div>
+                
+            </div>
+              <!-- prejct 4 -->
+            <div class="item">
+                <img src="./img4.jpg" alt="">
+                <div class="name">
+                    Password Manager
+                </div>
+               
+            </div>
+              <!-- prejct 5 -->
+            <div class="item">
+                <img src="./img5.png" alt="">
+                <div class="name">
+                    Password Generator
+                </div>
+
+            </div>
+            <!-- prejct 6 -->
+            <div class="item">
+                <img src="./img6.jpg" alt="">
+                <div class="name">
+                    Spam Detector
+                </div>
+               
+            </div>
+
+          </div>
+     </div>
+
+
+     <!-- footer section-->
+       <footer>
+        <div id="contact">
+           <div class="title">CONTACT</div>
+              <div class="item">
+                <div class="personal">
+                   <div class="details"><i class="fa-solid fa-address-book"></i> Contact: <span>+9196XXXX3200</span></div>
+                   <div class="details"><i class="fa-solid fa-envelope"></i> Email: <span>katixxyyzz@gmail.com</span></div>
+                   <div class="details"><i class="fa-solid fa-location-dot"></i> Address: <span>Dwarka Delhi 110011 .</span></div>
+                </div>
+              <div class="social" >
+                <!-- <h3> Social Media</h3> -->
+                  <ul>     <!--this list is for social media links  -->
+                     <li>
+                         <i class="fa-brands fa-facebook-f"></i>
+                     </li>
+                     <li>
+                        <i class="fa-brands fa-instagram"></i>
+                     </li>
+                     <li>
+                        <i class="fa-brands fa-x-twitter"></i>
+                     </li>
+                      <li> <i class="fa-brands fa-linkedin-in"></i></li>
+                  </ul>
+               </div>
+           </div>
+        </div>
+        </footer>
+   </div>
+</body>
+</html>
